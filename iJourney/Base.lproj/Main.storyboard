@@ -17,30 +17,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Journey" translatesAutoresizingMaskIntoConstraints="NO" id="szs-d3-ANa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Journey" translatesAutoresizingMaskIntoConstraints="NO" id="szs-d3-ANa">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iJourney" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWG-Jt-d75">
-                                <rect key="frame" x="134" y="123" width="177" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
-                                <color key="textColor" systemColor="systemTealColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ou-Lb-HLK">
-                                <rect key="frame" x="85" y="600" width="245" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text" base64-UTF8="YES">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="382" translatesAutoresizingMaskIntoConstraints="NO" id="g9R-9a-wl1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9T-xY-580" userLabel="TopView">
+                                        <rect key="frame" x="98.5" y="0.0" width="217.5" height="218"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iJourney" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWG-Jt-d75">
+                                                <rect key="frame" x="20.5" y="20" width="176.5" height="54.5"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                                <color key="textColor" systemColor="systemTealColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iWG-Jt-d75" firstAttribute="centerX" secondItem="O9T-xY-580" secondAttribute="centerX" id="Au5-yM-NnL"/>
+                                            <constraint firstItem="iWG-Jt-d75" firstAttribute="top" secondItem="O9T-xY-580" secondAttribute="top" constant="20" id="aao-Go-aaN"/>
+                                            <constraint firstItem="iWG-Jt-d75" firstAttribute="leading" secondItem="O9T-xY-580" secondAttribute="leading" constant="20.5" id="rPT-O4-ndq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flh-we-5yd" userLabel="BottomView">
+                                        <rect key="frame" x="64.5" y="600" width="285" height="218"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ou-Lb-HLK">
+                                                <rect key="frame" x="47" y="50" width="191" height="118"/>
+                                                <string key="text" base64-UTF8="YES">
 TGV0J3MgU3RhcnQuLi4DA
 </string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                            </label>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" systemColor="labelColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3ou-Lb-HLK" firstAttribute="centerX" secondItem="flh-we-5yd" secondAttribute="centerX" id="T5e-0R-K5t"/>
+                                            <constraint firstAttribute="bottom" secondItem="3ou-Lb-HLK" secondAttribute="bottom" constant="50" id="sBT-9N-ett"/>
+                                            <constraint firstItem="3ou-Lb-HLK" firstAttribute="centerY" secondItem="flh-we-5yd" secondAttribute="centerY" id="t96-55-oxk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g9R-9a-wl1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Ps-D4-Twg"/>
+                            <constraint firstItem="szs-d3-ANa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="828-TG-eJo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g9R-9a-wl1" secondAttribute="bottom" id="BiN-Kt-T94"/>
+                            <constraint firstItem="g9R-9a-wl1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fsv-eB-9PY"/>
+                            <constraint firstAttribute="trailing" secondItem="g9R-9a-wl1" secondAttribute="trailing" id="TNH-Q8-J9m"/>
+                            <constraint firstAttribute="trailing" secondItem="szs-d3-ANa" secondAttribute="trailing" id="py2-cj-tau"/>
+                            <constraint firstAttribute="bottom" secondItem="szs-d3-ANa" secondAttribute="bottom" id="tZd-r1-1iD"/>
+                            <constraint firstItem="szs-d3-ANa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xB7-Vf-TCo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
